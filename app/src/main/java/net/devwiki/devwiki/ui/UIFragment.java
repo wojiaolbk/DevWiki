@@ -1,6 +1,7 @@
 package net.devwiki.devwiki.ui;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.ui.recycler.RecyclerActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -40,13 +42,20 @@ public class UIFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.text_btn, R.id.edit_btn})
+    @OnClick({R.id.text_btn, R.id.edit_btn, R.id.recycler_btn})
     public void onClick(View view) {
+        Intent intent = null;
         switch (view.getId()) {
             case R.id.text_btn:
                 break;
             case R.id.edit_btn:
                 break;
+            case R.id.recycler_btn:
+                intent = new Intent(getActivity(), RecyclerActivity.class);
+                break;
+        }
+        if (intent != null) {
+            startActivity(intent);
         }
     }
 }
