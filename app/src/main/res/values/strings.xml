@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DevWiki</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="nav_ui">UI界面</string>
+    <string name="nav_service">后台服务</string>
+    <string name="nav_data">数据存储</string>
+    <string name="nav_network">网络访问</string>
+    <string name="nav_media">多媒体</string>
+    <string name="nav_device">硬件设备</string>
+    <string name="blog_address">http://blog.devwiki.net</string>
+    <string name="nav_share">分享</string>
+    <string name="nav_send">发送</string>
+</resources>
