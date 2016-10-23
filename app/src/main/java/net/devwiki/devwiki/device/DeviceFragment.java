@@ -1,4 +1,4 @@
-package net.devwiki.devwiki.service;
+package net.devwiki.devwiki.device;
 
 
 import android.os.Bundle;
@@ -8,20 +8,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
-import net.devwiki.devwiki.media.MediaFragment;
+import net.devwiki.devwiki.ui.UIFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ServiceFragment extends Fragment {
+public class DeviceFragment extends Fragment {
 
 
-    public ServiceFragment() {
+    public DeviceFragment() {
         // Required empty public constructor
     }
 
-    public static ServiceFragment newInstance() {
-        return new ServiceFragment();
+    public static DeviceFragment newInstance() {
+        return new DeviceFragment();
     }
 
     @Override
@@ -29,12 +29,11 @@ public class ServiceFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service, container, false);
+        return inflater.inflate(R.layout.fragment_device, container, false);
     }
 
 }
