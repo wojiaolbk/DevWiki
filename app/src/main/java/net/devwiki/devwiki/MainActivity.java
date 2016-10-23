@@ -1,6 +1,7 @@
 package net.devwiki.devwiki;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -66,11 +67,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         mNavView.setNavigationItemSelectedListener(this);
         mFragmentManager.beginTransaction().replace(R.id.content_fl, UIFragment.newInstance()).commit();
+        mNavView.setCheckedItem(R.id.nav_ui);
     }
 
     private void openGitHubPage() {
+        Uri uri = Uri.parse("https://github.com/Dev-Wiki/DevWiki");
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(uri);
+        startActivity(intent);
     }
 
     @Override

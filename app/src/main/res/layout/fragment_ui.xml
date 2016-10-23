@@ -12,9 +12,12 @@
 
         <Button
             android:id="@+id/text_btn"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:textSize="16sp"
-            android:text="@string/view_text_view"/>
+            android:text="@string/view_text_view"
+            style="@style/button_item_style"/>
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:text="@string/view_edit_text"
+            style="@style/button_item_style"/>
     </LinearLayout>
 </ScrollView>

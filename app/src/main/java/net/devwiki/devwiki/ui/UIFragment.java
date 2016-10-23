@@ -8,7 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
-import net.devwiki.devwiki.net.NetFragment;
+
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,7 +35,18 @@ public class UIFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ui, container, false);
+        View view = inflater.inflate(R.layout.fragment_ui, container, false);
+        ButterKnife.bind(this, view);
+        return view;
     }
 
+    @OnClick({R.id.text_btn, R.id.edit_btn})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.text_btn:
+                break;
+            case R.id.edit_btn:
+                break;
+        }
+    }
 }
