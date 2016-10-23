@@ -20,10 +20,7 @@
         </activity>
         <activity android:name=".ui.recycler.RecyclerActivity">
         </activity>
-        <activity
-            android:name=".ui.BottomNavActivity"
-            android:label="@string/title_activity_bottom_nav"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ui.BottomNavActivity">
         </activity>
     </application>
 

@@ -17,8 +17,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- UI界面 -->
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
     <string name="view_text_view">TextView</string>
     <string name="view_edit_text">EditText</string>
     <string name="view_recycler_view">RecyclerView</string>
-    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="view_bottom_nav">BottomNavigationView</string>
 </resources>

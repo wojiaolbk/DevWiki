@@ -42,7 +42,7 @@ public class UIFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.text_btn, R.id.edit_btn, R.id.recycler_btn})
+    @OnClick({R.id.text_btn, R.id.edit_btn, R.id.recycler_btn, R.id.bottom_nav_btn})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -52,6 +52,9 @@ public class UIFragment extends Fragment {
                 break;
             case R.id.recycler_btn:
                 intent = new Intent(getActivity(), RecyclerActivity.class);
+                break;
+            case R.id.bottom_nav_btn:
+                intent = new Intent(getActivity(), BottomNavActivity.class);
                 break;
         }
         if (intent != null) {
