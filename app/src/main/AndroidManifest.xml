@@ -22,6 +22,10 @@
         </activity>
         <activity android:name=".ui.BottomNavActivity">
         </activity>
+        <activity android:name=".ui.TextViewActivity">
+        </activity>
+        <activity android:name=".ui.EditTextActivity">
+        </activity>
     </application>
 
 </manifest>

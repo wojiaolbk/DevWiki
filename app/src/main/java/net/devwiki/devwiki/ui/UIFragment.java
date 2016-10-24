@@ -47,8 +47,10 @@ public class UIFragment extends Fragment {
         Intent intent = null;
         switch (view.getId()) {
             case R.id.text_btn:
+                intent = new Intent(getActivity(), TextViewActivity.class);
                 break;
             case R.id.edit_btn:
+                intent = new Intent(getActivity(), EditTextActivity.class);
                 break;
             case R.id.recycler_btn:
                 intent = new Intent(getActivity(), RecyclerActivity.class);
