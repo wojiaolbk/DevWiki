@@ -22,9 +22,15 @@
         </activity>
         <activity android:name=".ui.BottomNavActivity">
         </activity>
-        <activity android:name=".ui.TextViewActivity">
+        <activity
+            android:name=".ui.TextViewActivity"
+            android:label="@string/title_activity_text_view"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ui.EditTextActivity">
+        <activity
+            android:name=".ui.EditTextActivity"
+            android:label="@string/title_activity_edit_text"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

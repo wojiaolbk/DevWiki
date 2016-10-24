@@ -24,4 +24,6 @@
     <string name="view_edit_text">EditText</string>
     <string name="view_recycler_view">RecyclerView</string>
     <string name="view_bottom_nav">BottomNavigationView</string>
+    <string name="title_activity_text_view">TextViewActivity</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
 </resources>
