@@ -4,6 +4,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="blog_short_label">Blog</string>
+    <string name="blog_long_label">打开Blog</string>
+    <string name="github_short_label">GitHub</string>
+    <string name="github_long_label">打开GitHub</string>
+
     <string name="action_settings">设置</string>
     <string name="nav_ui">UI界面</string>
     <string name="nav_service">后台服务</string>

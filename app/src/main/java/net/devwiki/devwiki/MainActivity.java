@@ -1,12 +1,14 @@
 package net.devwiki.devwiki;
 
 import android.content.Intent;
+import android.content.pm.ShortcutInfo;
+import android.content.pm.ShortcutManager;
+import android.graphics.drawable.Icon;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -26,10 +28,18 @@ import net.devwiki.devwiki.net.NetFragment;
 import net.devwiki.devwiki.service.ServiceFragment;
 import net.devwiki.devwiki.ui.UIFragment;
 
+import java.util.Arrays;
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    private static final String TAG = "MainActivity";
+
+    private static final String SHORTCUT_ID_BLOG = "Blog";
+    private static final String SHORTCUT_ID_GITHUB = "GitHub";
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
@@ -68,6 +78,44 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mNavView.setNavigationItemSelectedListener(this);
         mFragmentManager.beginTransaction().replace(R.id.content_fl, UIFragment.newInstance()).commit();
         mNavView.setCheckedItem(R.id.nav_ui);
+
+        addShortcut();
+    }
+
+    private void addShortcut() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
+            ShortcutManager shortcutManager = getSystemService(ShortcutManager.class);
+            List<ShortcutInfo> infoList = shortcutManager.getDynamicShortcuts();
+            boolean isHadBlog = false;
+            boolean isHadGitHub = false;
+            for (ShortcutInfo shortcutInfo : infoList) {
+                if (SHORTCUT_ID_BLOG.equals(shortcutInfo.getId()) ) {
+                    isHadBlog = true;
+                }
+                if (SHORTCUT_ID_GITHUB.equals(shortcutInfo.getId())) {
+                    isHadGitHub = true;
+                }
+            }
+            ShortcutInfo shortcut;
+            if (!isHadBlog) {
+                shortcut = new ShortcutInfo.Builder(this, SHORTCUT_ID_BLOG)
+                        .setShortLabel(getString(R.string.blog_short_label))
+                        .setLongLabel(getString(R.string.blog_long_label))
+                        .setIcon(Icon.createWithResource(this, R.drawable.ic_launcher))
+                        .setIntent(new Intent(Intent.ACTION_VIEW, Uri.parse("http://blog.devwiki.net")))
+                        .build();
+                shortcutManager.addDynamicShortcuts(Arrays.asList(shortcut));
+            }
+            if (!isHadGitHub) {
+                shortcut = new ShortcutInfo.Builder(this, SHORTCUT_ID_GITHUB)
+                        .setShortLabel(getString(R.string.github_short_label))
+                        .setLongLabel(getString(R.string.github_long_label))
+                        .setIcon(Icon.createWithResource(this, R.drawable.ic_github))
+                        .setIntent(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Dev-Wiki/DevWiki")))
+                        .build();
+                shortcutManager.addDynamicShortcuts(Arrays.asList(shortcut));
+            }
+        }
     }
 
     private void openGitHubPage() {
