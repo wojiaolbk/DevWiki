@@ -18,9 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.recycler.RecyclerActivity">
+        <activity
+            android:name=".ui.recycler.RecyclerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ui.BottomNavActivity">
+        <activity
+            android:name=".ui.BottomNavActivity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name=".ui.TextViewActivity"
