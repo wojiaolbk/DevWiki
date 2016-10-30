@@ -7,11 +7,12 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.RelativeLayout;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RecyclerActivity extends AppCompatActivity {
+public class RecyclerActivity extends BaseActivity {
 
     @BindView(R.id.recycler_view)
     RecyclerView mRecyclerView;

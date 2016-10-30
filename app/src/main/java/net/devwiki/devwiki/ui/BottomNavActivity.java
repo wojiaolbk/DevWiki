@@ -8,11 +8,12 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.base.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class BottomNavActivity extends AppCompatActivity {
+public class BottomNavActivity extends BaseActivity {
 
     @BindView(R.id.nav_tv)
     TextView mNavTv;
