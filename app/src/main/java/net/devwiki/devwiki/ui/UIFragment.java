@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.ui.list.ListViewActivity;
 import net.devwiki.devwiki.ui.recycler.RecyclerActivity;
 
 import butterknife.ButterKnife;
@@ -42,7 +43,7 @@ public class UIFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.text_btn, R.id.edit_btn, R.id.recycler_btn, R.id.bottom_nav_btn})
+    @OnClick({R.id.text_btn, R.id.edit_btn, R.id.list_view_btn, R.id.recycler_btn, R.id.bottom_nav_btn})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -51,6 +52,9 @@ public class UIFragment extends Fragment {
                 break;
             case R.id.edit_btn:
                 intent = new Intent(getActivity(), EditTextActivity.class);
+                break;
+            case R.id.list_view_btn:
+                intent = new Intent(getActivity(), ListViewActivity.class);
                 break;
             case R.id.recycler_btn:
                 intent = new Intent(getActivity(), RecyclerActivity.class);

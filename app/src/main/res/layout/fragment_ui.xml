@@ -21,6 +21,11 @@
             style="@style/button_item_style"/>
 
         <Button
+            android:id="@+id/list_view_btn"
+            android:text="@string/view_list_view"
+            style="@style/button_item_style"/>
+
+        <Button
             android:id="@+id/recycler_btn"
             android:text="@string/view_recycler_view"
             style="@style/button_item_style"/>

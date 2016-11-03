@@ -3,11 +3,11 @@
           package="net.devwiki.devwiki">
 
     <application
+        android:name=".base.DevWikiApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".base.DevWikiApp"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -39,6 +39,10 @@
         </activity>
         <activity
             android:name=".base.BaseActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.list.ListViewActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>

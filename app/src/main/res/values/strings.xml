@@ -27,6 +27,7 @@
     <string name="title_activity_bottom_nav">BottomNavActivity</string>
     <string name="view_text_view">TextView</string>
     <string name="view_edit_text">EditText</string>
+    <string name="view_list_view">ListView</string>
     <string name="view_recycler_view">RecyclerView</string>
     <string name="view_bottom_nav">BottomNavigationView</string>
     <string name="title_activity_text_view">TextViewActivity</string>
@@ -35,4 +36,5 @@
     <string name="normal_text_view">NormalTextView</string>
     <string name="html_text_view">HtmlTextView</string>
     <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_list_view_activty">ListViewActivty</string>
 </resources>
