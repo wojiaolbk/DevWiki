@@ -19,10 +19,10 @@ import java.util.List;
 
 public class ListViewAdapter extends BaseAdapter {
 
-    interface ViewType {
-        int MALE = 0;
-        int FEMALE = 1;
-    }
+interface ViewType {
+    int MALE = -1;
+    int FEMALE = 1;
+}
 
     private Context mContext;
     private List<Person> mList;
