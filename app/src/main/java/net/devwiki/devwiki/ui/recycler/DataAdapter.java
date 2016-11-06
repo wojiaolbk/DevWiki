@@ -10,7 +10,7 @@ import net.devwiki.recycler.BaseAdapter;
 import net.devwiki.recycler.BaseHolder;
 
 /**
- * Created by zyz on 2016/11/4.
+ * Created by DevWiki on 2016/11/4.
  */
 
 public class DataAdapter extends BaseAdapter<String, DataAdapter.DataHolder> {
