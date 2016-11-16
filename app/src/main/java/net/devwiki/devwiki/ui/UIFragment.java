@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.ui.edit.EditTextActivity;
 import net.devwiki.devwiki.ui.list.ListViewActivity;
 import net.devwiki.devwiki.ui.recycler.RecyclerActivity;
 

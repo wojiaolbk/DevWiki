@@ -20,6 +20,12 @@
     <string name="nav_share">分享</string>
     <string name="nav_send">发送</string>
 
+    <string name="btn_ok">确认</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_return">返回</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_previous">上一步</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -35,8 +41,14 @@
     <string name="drawable_text_view">DrawableTextView</string>
     <string name="normal_text_view">NormalTextView</string>
     <string name="html_text_view">HtmlTextView</string>
-    <string name="title_activity_base">BaseActivity</string>
-    <string name="title_activity_list_view_activty">ListViewActivty</string>
+
+    <!-- EditText -->
     <string name="please_input_name">请输入名称</string>
     <string name="please_input_password">请输入密码</string>
+    <string name="one_input_btn">单个输入框(按钮上移)</string>
+    <string name="one_input_all_btn">单个输入框(整体上移)</string>
+    <string name="one_input_all2_btn">单个输入框(整体上移2)</string>
+    <string name="two_input_btn">两个输入框(按钮上移)</string>
+    <string name="two_input2_btn">两个输入框(不上移)</string>
+    <string name="two_input_all_btn">两个输入框(整体上移)</string>
 </resources>
