@@ -24,7 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.0'
     compile 'com.android.support:support-v4:25.0.0'
     compile 'com.android.support:design:25.0.0'
-    compile 'net.devwiki.log:log:0.0.1'
+    compile 'net.devwiki.log:log:0.0.2'
     compile 'net.devwiki.recycler:recycler:0.0.1'
     compile 'net.devwiki.common:common:0.0.1'
     compile 'com.jakewharton:butterknife:8.2.1'
