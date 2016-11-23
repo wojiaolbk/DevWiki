@@ -66,9 +66,12 @@
             android:label="TwoInput2Activity"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
-        <activity android:name=".ui.edit.TwoInputAllActivity"
-                  android:label="TwoInputAllActivity"
-                  android:windowSoftInputMode="adjustResize|stateVisible">
+        <activity
+            android:name=".ui.edit.TwoInputAllActivity"
+            android:label="TwoInputAllActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+        <activity android:name=".ui.badge.BadgeActivity">
         </activity>
     </application>
 

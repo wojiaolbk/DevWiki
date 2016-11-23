@@ -34,5 +34,10 @@
             android:id="@+id/bottom_nav_btn"
             android:text="@string/view_bottom_nav"
             style="@style/button_item_style"/>
+
+        <Button
+            android:id="@+id/badge_btn"
+            android:text="@string/view_badge_icon"
+            style="@style/button_item_style"/>
     </LinearLayout>
 </ScrollView>

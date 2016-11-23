@@ -36,6 +36,7 @@
     <string name="view_list_view">ListView</string>
     <string name="view_recycler_view">RecyclerView</string>
     <string name="view_bottom_nav">BottomNavigationView</string>
+    <string name="view_badge_icon">BadgeIcon</string>
     <string name="title_activity_text_view">TextViewActivity</string>
     <string name="title_activity_edit_text">EditTextActivity</string>
     <string name="drawable_text_view">DrawableTextView</string>

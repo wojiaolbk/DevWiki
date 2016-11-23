@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.ui.badge.BadgeActivity;
 import net.devwiki.devwiki.ui.edit.EditTextActivity;
 import net.devwiki.devwiki.ui.list.ListViewActivity;
 import net.devwiki.devwiki.ui.recycler.RecyclerActivity;
@@ -44,7 +45,7 @@ public class UIFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.text_btn, R.id.edit_btn, R.id.list_view_btn, R.id.recycler_btn, R.id.bottom_nav_btn})
+    @OnClick({R.id.text_btn, R.id.edit_btn, R.id.list_view_btn, R.id.recycler_btn, R.id.bottom_nav_btn, R.id.badge_btn})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
@@ -62,6 +63,9 @@ public class UIFragment extends Fragment {
                 break;
             case R.id.bottom_nav_btn:
                 intent = new Intent(getActivity(), BottomNavActivity.class);
+                break;
+            case R.id.badge_btn:
+                intent = new Intent(getActivity(), BadgeActivity.class);
                 break;
         }
         if (intent != null) {
