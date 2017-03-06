@@ -1,0 +1,18 @@
+ext {
+
+    compileSdkVer = 25
+    buildToolsVer = "25.0.2"
+    minSdkVer = 15
+    targetSdkVer = 25
+
+    supportAppCompat = 'com.android.support:appcompat-v7:25.2.0'
+    supportRecyclerView = 'com.android.support:recyclerview-v7:25.2.0'
+    supportV4 = 'com.android.support:support-v4:25.2.0'
+    supportDesign = 'com.android.support:design:25.2.0'
+    devLog = 'net.devwiki.log:log:0.0.2'
+    devRecycler = 'net.devwiki.recycler:recycler:0.0.1'
+    devCommon = 'net.devwiki.common:common:0.0.1'
+    butterknife = 'com.jakewharton:butterknife:8.4.0'
+    butterknife_annotation = 'com.jakewharton:butterknife-compiler:8.4.0'
+    junit = 'junit:junit:4.12'
+}

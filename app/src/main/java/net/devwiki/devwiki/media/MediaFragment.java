@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
-import net.devwiki.devwiki.data.DataFragment;
 
 /**
  * A simple {@link Fragment} subclass.

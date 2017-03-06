@@ -26,7 +26,7 @@ import net.devwiki.devwiki.device.DeviceFragment;
 import net.devwiki.devwiki.media.MediaFragment;
 import net.devwiki.devwiki.net.NetFragment;
 import net.devwiki.devwiki.service.ServiceFragment;
-import net.devwiki.devwiki.ui.UIFragment;
+import net.devwiki.ui.UIFragment;
 
 import java.util.Arrays;
 import java.util.List;

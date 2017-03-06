@@ -3,7 +3,7 @@
           package="net.devwiki.devwiki">
 
     <application
-        android:name=".base.DevWikiApp"
+        android:name=".DevWikiApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -20,58 +20,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.recycler.RecyclerActivity"
+            android:name="net.devwiki.ui.recycler.RecyclerActivity"
             android:label="RecyclerActivity">
         </activity>
         <activity
-            android:name=".ui.BottomNavActivity"
+            android:name="net.devwiki.ui.BottomNavActivity"
             android:label="BottomNavActivity">
         </activity>
         <activity
-            android:name=".ui.TextViewActivity"
+            android:name="net.devwiki.ui.TextViewActivity"
             android:label="@string/title_activity_text_view">
         </activity>
         <activity
-            android:name=".ui.edit.EditTextActivity"
+            android:name="net.devwiki.ui.edit.EditTextActivity"
             android:label="@string/title_activity_edit_text">
         </activity>
         <activity android:name=".base.BaseActivity">
         </activity>
         <activity
-            android:name=".ui.list.ListViewActivity"
+            android:name="net.devwiki.ui.list.ListViewActivity"
             android:label="ListViewActivity">
         </activity>
         <activity
-            android:name=".ui.edit.OneInputActivity"
+            android:name="net.devwiki.ui.edit.OneInputActivity"
             android:label="OneInputActivity"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
         <activity
-            android:name=".ui.edit.OneInputAllActivity"
+            android:name="net.devwiki.ui.edit.OneInputAllActivity"
             android:label="OneInputAllActivity"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
         <activity
-            android:name=".ui.edit.OneInputAll2Activity"
+            android:name="net.devwiki.ui.edit.OneInputAll2Activity"
             android:label="OneInputAll2Activity"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
         <activity
-            android:name=".ui.edit.TwoInputActivity"
+            android:name="net.devwiki.ui.edit.TwoInputActivity"
             android:label="TwoInputActivity"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
         <activity
-            android:name=".ui.edit.TwoInput2Activity"
+            android:name="net.devwiki.ui.edit.TwoInput2Activity"
             android:label="TwoInput2Activity"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
         <activity
-            android:name=".ui.edit.TwoInputAllActivity"
+            android:name="net.devwiki.ui.edit.TwoInputAllActivity"
             android:label="TwoInputAllActivity"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
-        <activity android:name=".ui.badge.BadgeActivity">
+        <activity android:name="net.devwiki.ui.badge.BadgeActivity">
         </activity>
     </application>
 
