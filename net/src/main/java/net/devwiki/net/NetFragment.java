@@ -1,4 +1,4 @@
-package net.devwiki.devwiki.device;
+package net.devwiki.net;
 
 
 import android.os.Bundle;
@@ -7,20 +7,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import net.devwiki.devwiki.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class DeviceFragment extends Fragment {
+public class NetFragment extends Fragment {
 
 
-    public DeviceFragment() {
+    public NetFragment() {
         // Required empty public constructor
     }
 
-    public static DeviceFragment newInstance() {
-        return new DeviceFragment();
+    public static NetFragment newInstance() {
+        return new NetFragment();
     }
 
     @Override
@@ -32,7 +31,7 @@ public class DeviceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_device, container, false);
+        return inflater.inflate(R.layout.fragment_net, container, false);
     }
 
 }

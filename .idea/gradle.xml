@@ -12,7 +12,9 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base" />
             <option value="$PROJECT_DIR$/data" />
+            <option value="$PROJECT_DIR$/device" />
             <option value="$PROJECT_DIR$/media" />
+            <option value="$PROJECT_DIR$/net" />
             <option value="$PROJECT_DIR$/ui" />
             <option value="$PROJECT_DIR$/ui2" />
           </set>

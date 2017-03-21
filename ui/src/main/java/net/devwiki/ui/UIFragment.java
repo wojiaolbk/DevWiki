@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 
 public class UIFragment extends Fragment {
 
-    public static UIFragment getInstance() {
+    public static UIFragment newInstance() {
         return new UIFragment();
     }
 

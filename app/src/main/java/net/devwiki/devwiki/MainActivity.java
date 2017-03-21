@@ -21,11 +21,10 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import net.devwiki.devwiki.data.DataFragment;
-import net.devwiki.devwiki.device.DeviceFragment;
-import net.devwiki.devwiki.media.MediaFragment;
-import net.devwiki.devwiki.net.NetFragment;
-import net.devwiki.devwiki.service.ServiceFragment;
+import net.devwiki.data.DataFragment;
+import net.devwiki.device.DeviceFragment;
+import net.devwiki.media.MediaFragment;
+import net.devwiki.net.NetFragment;
 import net.devwiki.ui.UIFragment;
 
 import java.util.Arrays;
@@ -157,9 +156,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (item.getItemId()) {
             case R.id.nav_ui:
                 mFragmentManager.beginTransaction().replace(R.id.content_fl, UIFragment.newInstance()).commit();
-                break;
-            case R.id.nav_service:
-                mFragmentManager.beginTransaction().replace(R.id.content_fl, ServiceFragment.newInstance()).commit();
                 break;
             case R.id.nav_data:
                 mFragmentManager.beginTransaction().replace(R.id.content_fl, DataFragment.newInstance()).commit();
