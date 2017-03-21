@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import net.devwiki.ui.R;
 import net.devwiki.ui.badge.BadgeActivity;
 import net.devwiki.ui.edit.EditTextActivity;
 import net.devwiki.ui.list.ListViewActivity;
