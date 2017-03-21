@@ -1,4 +1,4 @@
-package net.devwiki.devwiki.data;
+package net.devwiki.data;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,8 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import net.devwiki.devwiki.R;
 
 public class DataFragment extends Fragment {
 
