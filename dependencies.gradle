@@ -28,21 +28,23 @@ ext {
 
     plugin_versions = [
         versions   : "0.15.0",
-        buildGradle: "2.2.3",
+        buildGradle: "3.0.0-alpha3",
         butterknife: "8.6.0",
+        kotlin     : "1.1.2-5"
     ]
 
     gradle_plugins = [
         versions   : "com.github.ben-manes:gradle-versions-plugin:${plugin_versions.versions}",
         buildGradle: "com.android.tools.build:gradle:${plugin_versions.buildGradle}",
-        butterknife: "com.jakewharton:butterknife-gradle-plugin:${plugin_versions.butterknife}"
+        butterknife: "com.jakewharton:butterknife-gradle-plugin:${plugin_versions.butterknife}",
+        kotlin     : "org.jetbrains.kotlin:kotlin-gradle-plugin:${plugin_versions.kotlin}"
     ]
 
     versions = [
-        supportVersion       : "25.2.0",
+        supportVersion       : "25.3.1",
         supportMultidex      : "1.0.1",
         junit                : "4.12",
-
+        kotlin               : "1.1.2-5",
         devLog               : "0.0.3",
         devRecycler          : "0.0.1",
         devCommon            : "0.0.1",
@@ -53,7 +55,7 @@ ext {
         gson                 : "2.6.1",
         leakcanary           : "1.5",
         blockcanary          : "1.4.0",
-
+        mosbyMVP             : "3.0.4",
         rxJava               : "1.2.0", //
         rxAndroid            : "1.2.1", //
         retrofit             : "2.1.0", //
@@ -76,6 +78,7 @@ ext {
         supportCardView      : "com.android.support:cardview-v7:${versions.supportVersion}",
         supportMultidex      : "com.android.support:multidex:${versions.supportMultidex}",
         junit                : "junit:junit:${versions.junit}",
+        kotlin               : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}",
 
         devLog               : "net.devwiki.log:log:${versions.devLog}",
         devRecycler          : "net.devwiki.recycler:recycler:${versions.devRecycler}",
@@ -88,6 +91,7 @@ ext {
         leakcanary           : "com.squareup.leakcanary:leakcanary-android:${versions.leakcanary}",
         blockcanary          : "com.github.markzhai:blockcanary-android:${versions.blockcanary}",
 
+        mosbyMVP             : "com.hannesdorfmann.mosby3:mvp:${versions.mosbyMVP}",
         rxJava               : "io.reactivex:rxjava:${versions.rxJava}", //
         rxAndroid            : "io.reactivex:rxandroid:${versions.rxAndroid}", //
         retrofit             : "com.squareup.retrofit2:retrofit:${versions.retrofit}", //

@@ -19,59 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name="net.devwiki.ui.recycler.RecyclerActivity"
-            android:label="RecyclerActivity">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.BottomNavActivity"
-            android:label="BottomNavActivity">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.TextViewActivity"
-            android:label="@string/title_activity_text_view">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.edit.EditTextActivity"
-            android:label="@string/title_activity_edit_text">
-        </activity>
-        <activity android:name=".base.BaseActivity">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.list.ListViewActivity"
-            android:label="ListViewActivity">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.edit.OneInputActivity"
-            android:label="OneInputActivity"
-            android:windowSoftInputMode="adjustResize|stateVisible">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.edit.OneInputAllActivity"
-            android:label="OneInputAllActivity"
-            android:windowSoftInputMode="adjustResize|stateVisible">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.edit.OneInputAll2Activity"
-            android:label="OneInputAll2Activity"
-            android:windowSoftInputMode="adjustResize|stateVisible">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.edit.TwoInputActivity"
-            android:label="TwoInputActivity"
-            android:windowSoftInputMode="adjustResize|stateVisible">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.edit.TwoInput2Activity"
-            android:label="TwoInput2Activity"
-            android:windowSoftInputMode="adjustResize|stateVisible">
-        </activity>
-        <activity
-            android:name="net.devwiki.ui.edit.TwoInputAllActivity"
-            android:label="TwoInputAllActivity"
-            android:windowSoftInputMode="adjustResize|stateVisible">
-        </activity>
-        <activity android:name="net.devwiki.ui.badge.BadgeActivity">
+        <activity android:name=".widget.BaseActivity"/>
+        <activity android:name=".module.main.Main2Activity">
         </activity>
     </application>
 

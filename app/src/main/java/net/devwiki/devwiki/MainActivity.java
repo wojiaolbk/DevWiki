@@ -21,17 +21,14 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import net.devwiki.data.DataFragment;
-import net.devwiki.device.DeviceFragment;
-import net.devwiki.media.MediaFragment;
-import net.devwiki.net.NetFragment;
-import net.devwiki.ui.UIFragment;
+import net.devwiki.devwiki.module.view.UIFragment;
 
 import java.util.Arrays;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -46,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     FrameLayout mContentFl;
     @BindView(R.id.content_main)
     RelativeLayout mContentMain;
-    @BindView(R.id.fab)
+    @BindView(R.id.main_fab)
     FloatingActionButton mFab;
     @BindView(R.id.nav_view)
     NavigationView mNavView;
@@ -60,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
         mFragmentManager = getSupportFragmentManager();
         setSupportActionBar(mToolbar);
 
@@ -88,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             boolean isHadBlog = false;
             boolean isHadGitHub = false;
             for (ShortcutInfo shortcutInfo : infoList) {
-                if (SHORTCUT_ID_BLOG.equals(shortcutInfo.getId()) ) {
+                if (SHORTCUT_ID_BLOG.equals(shortcutInfo.getId())) {
                     isHadBlog = true;
                 }
                 if (SHORTCUT_ID_GITHUB.equals(shortcutInfo.getId())) {
@@ -158,16 +156,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 mFragmentManager.beginTransaction().replace(R.id.content_fl, UIFragment.newInstance()).commit();
                 break;
             case R.id.nav_data:
-                mFragmentManager.beginTransaction().replace(R.id.content_fl, DataFragment.newInstance()).commit();
+//                mFragmentManager.beginTransaction().replace(R.id.content_fl, DataFragment.newInstance()).commit();
                 break;
             case R.id.nav_network:
-                mFragmentManager.beginTransaction().replace(R.id.content_fl, NetFragment.newInstance()).commit();
+//                mFragmentManager.beginTransaction().replace(R.id.content_fl, NetFragment.newInstance()).commit();
                 break;
             case R.id.nav_media:
-                mFragmentManager.beginTransaction().replace(R.id.content_fl, MediaFragment.newInstance()).commit();
+//                mFragmentManager.beginTransaction().replace(R.id.content_fl, MediaFragment.newInstance()).commit();
                 break;
             case R.id.nav_device:
-                mFragmentManager.beginTransaction().replace(R.id.content_fl, DeviceFragment.newInstance()).commit();
+//                mFragmentManager.beginTransaction().replace(R.id.content_fl, DeviceFragment.newInstance()).commit();
                 break;
             case R.id.nav_share:
 

@@ -1,1 +1,1 @@
-include ':app', ':ui2', ':base', ':ui', ':data', ':media', ':net', ':device'
+include ':app'

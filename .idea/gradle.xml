@@ -3,20 +3,13 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="C:\Dev\Tool\android-studio\gradle\gradle-2.14.1" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../Tool/android-studio/gradle/gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/base" />
-            <option value="$PROJECT_DIR$/data" />
-            <option value="$PROJECT_DIR$/device" />
-            <option value="$PROJECT_DIR$/media" />
-            <option value="$PROJECT_DIR$/net" />
-            <option value="$PROJECT_DIR$/ui" />
-            <option value="$PROJECT_DIR$/ui2" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
