@@ -20,6 +20,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile supportAppCompat
-    testCompile junit
+    compile libraries.supportAppCompat
+    testCompile libraries.junit
 }

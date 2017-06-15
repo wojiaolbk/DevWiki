@@ -10,9 +10,6 @@ android {
         targetSdkVersion targetSdkVer
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
@@ -24,13 +21,13 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile supportDesign
-    compile supportRecyclerView
-    compile devLog
-    compile devRecycler
-    compile devCommon
-    compile butterknife
-    compile butterknife_annotation
-    testCompile junit
+    compile libraries.supportDesign
+    compile libraries.supportRecyclerView
+    compile libraries.devLog
+    compile libraries.devRecycler
+    compile libraries.devCommon
+    compile libraries.butterknife
+    compile libraries.butterknifeCompiler
+    testCompile libraries.junit
     compile project(':base')
 }

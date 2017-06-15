@@ -21,13 +21,13 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile supportDesign
-    compile supportRecyclerView
-    compile devLog
-    compile devRecycler
-    compile devCommon
-    compile butterknife
-    compile butterknife_annotation
-    testCompile junit
+    compile libraries.supportDesign
+    compile libraries.supportRecyclerView
+    compile libraries.devLog
+    compile libraries.devRecycler
+    compile libraries.devCommon
+    compile libraries.butterknife
+    compile libraries.butterknifeCompiler
+    testCompile libraries.junit
     compile project(':base')
 }
