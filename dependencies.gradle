@@ -29,7 +29,7 @@ ext {
     plugin_versions = [
         versions   : "0.15.0",
         buildGradle: "2.2.3",
-        butterknife: "8.4.0",
+        butterknife: "8.6.0",
     ]
 
     gradle_plugins = [
@@ -43,12 +43,12 @@ ext {
         supportMultidex      : "1.0.1",
         junit                : "4.12",
 
-        devLog               : "0.0.2",
+        devLog               : "0.0.3",
         devRecycler          : "0.0.1",
         devCommon            : "0.0.1",
 
-        butterknife          : "8.4.0",
-        butterknifeCompiler  : "8.4.0",
+        butterknife          : "8.6.0",
+        butterknifeCompiler  : "8.6.0",
         eventBus             : "3.0.0",
         gson                 : "2.6.1",
         leakcanary           : "1.5",
