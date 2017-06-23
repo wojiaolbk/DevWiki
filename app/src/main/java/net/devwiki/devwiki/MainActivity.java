@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @BindView(R.id.content_main)
     RelativeLayout mContentMain;
     @BindView(R.id.main_fab)
-    FloatingActionButton mFab;
+    FloatingActionButton mMainFab;
     @BindView(R.id.nav_view)
     NavigationView mNavView;
     @BindView(R.id.drawer_layout)
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mFragmentManager = getSupportFragmentManager();
         setSupportActionBar(mToolbar);
 
-        mFab.setOnClickListener(new View.OnClickListener() {
+        mMainFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openGitHubPage();

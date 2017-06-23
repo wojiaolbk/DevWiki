@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion compileSdkVer
@@ -20,15 +19,16 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation libraries.mosbyMVP
-    implementation libraries.supportAppCompat
-    implementation libraries.supportDesign
-    implementation libraries.butterknife
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile libraries.mosbyMVP
+    compile libraries.supportAppCompat
+    compile libraries.supportDesign
+    compile libraries.butterknife
+    compile libraries.devLog
+    annotationProcessor libraries.butterknifeCompiler
 //    compile project(':ui')
 //    compile project(':net')
 //    compile project(':media')
 //    compile project(':device')
 //    compile project(':data')
-    implementation libraries.kotlin
 }

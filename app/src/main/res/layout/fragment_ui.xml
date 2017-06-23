@@ -10,8 +10,8 @@
         android:orientation="vertical">
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/recycler_view_btn"
-            android:text="RecyclerView"
-            style="@style/style_normal_button"/>
+            android:id="@+id/activity_btn"
+            style="@style/style_normal_button"
+            android:text="@string/activity"/>
     </LinearLayout>
 </ScrollView>

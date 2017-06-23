@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.module.view.activity.LaunchModeActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -37,9 +38,14 @@ public class UIFragment extends Fragment {
         return view;
     }
 
-    @OnClick({})
+    @OnClick({R.id.activity_btn})
     public void onClick(View view) {
         Intent intent = null;
+        switch (view.getId()) {
+            case R.id.activity_btn:
+                intent = new Intent(getActivity(), LaunchModeActivity.class);
+                break;
+        }
         if (intent != null) {
             startActivity(intent);
         }

@@ -52,4 +52,9 @@
     <string name="two_input_btn">两个输入框(按钮上移)</string>
     <string name="two_input2_btn">两个输入框(不上移)</string>
     <string name="two_input_all_btn">两个输入框(整体上移)</string>
+    <string name="standard">Standard</string>
+    <string name="single_task">SingleTask</string>
+    <string name="single_top">SingleTop</string>
+    <string name="single_instance">SingleInstance</string>
+    <string name="activity">Activity</string>
 </resources>
