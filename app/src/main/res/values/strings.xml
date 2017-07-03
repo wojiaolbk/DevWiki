@@ -57,4 +57,13 @@
     <string name="single_top">SingleTop</string>
     <string name="single_instance">SingleInstance</string>
     <string name="activity">Activity</string>
+    <string name="fps_1">1FPS</string>
+    <string name="fps_2">2FPS</string>
+    <string name="fps_3">3.3FPS</string>
+    <string name="fps_5">5FPS</string>
+    <string name="fps_10">10FPS</string>
+    <string name="fps_20">20FPS</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="animation">Animation</string>
 </resources>

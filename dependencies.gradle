@@ -48,6 +48,8 @@ ext {
         devLog               : "0.0.3",
         devRecycler          : "0.0.1",
         devCommon            : "0.0.1",
+        lifecycle            : "1.0.0-alpha3",
+        room                 : "1.0.0-alpha3",
 
         butterknife          : "8.6.0",
         butterknifeCompiler  : "8.6.0",
@@ -79,6 +81,14 @@ ext {
         supportMultidex      : "com.android.support:multidex:${versions.supportMultidex}",
         junit                : "junit:junit:${versions.junit}",
         kotlin               : "org.jetbrains.kotlin:kotlin-stdlib-jre7:${versions.kotlin}",
+
+        lifecycleRuntime     : "android.arch.lifecycle:runtime:${versions.lifecycle}",
+        lifecycleExtensions  : "android.arch.lifecycle:extensions:${versions.lifecycle}",
+        lifecycleCompiler    : "android.arch.lifecycle:compiler:${versions.lifecycle}",
+        roomRuntime          : "android.arch.persistence.room:runtime:${versions.room}",
+        roomCompiler         : "android.arch.persistence.room:compiler:${versions.room}",
+        roomTesting          : "android.arch.persistence.room:testing:${versions.room}",
+        roomRxJava           : "android.arch.persistence.room:rxjava2:${versions.room}",
 
         devLog               : "net.devwiki.log:log:${versions.devLog}",
         devRecycler          : "net.devwiki.recycler:recycler:${versions.devRecycler}",

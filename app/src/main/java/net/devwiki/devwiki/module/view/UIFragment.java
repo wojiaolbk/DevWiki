@@ -1,6 +1,7 @@
 package net.devwiki.devwiki.module.view;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 
 import net.devwiki.devwiki.R;
 import net.devwiki.devwiki.module.view.activity.LaunchModeActivity;
+import net.devwiki.devwiki.module.view.animation.AnimationActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -38,12 +40,15 @@ public class UIFragment extends Fragment {
         return view;
     }
 
-    @OnClick({R.id.activity_btn})
+    @OnClick({R.id.activity_btn, R.id.animation_btn})
     public void onClick(View view) {
         Intent intent = null;
         switch (view.getId()) {
             case R.id.activity_btn:
                 intent = new Intent(getActivity(), LaunchModeActivity.class);
+                break;
+            case R.id.animation_btn:
+                intent = new Intent(getActivity(), AnimationActivity.class);
                 break;
         }
         if (intent != null) {

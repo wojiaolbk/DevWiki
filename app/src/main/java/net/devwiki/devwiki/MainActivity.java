@@ -76,12 +76,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mFragmentManager.beginTransaction().replace(R.id.content_fl, UIFragment.newInstance()).commit();
         mNavView.setCheckedItem(R.id.nav_ui);
 
-        addShortcut();
+//        addShortcut();
     }
 
     private void addShortcut() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
             ShortcutManager shortcutManager = getSystemService(ShortcutManager.class);
+            if (shortcutManager == null) {
+                return;
+            }
             List<ShortcutInfo> infoList = shortcutManager.getDynamicShortcuts();
             boolean isHadBlog = false;
             boolean isHadGitHub = false;

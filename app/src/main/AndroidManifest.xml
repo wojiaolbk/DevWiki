@@ -19,16 +19,31 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".widget.BaseActivity"/>
-        <activity android:name=".module.view.activity.LaunchModeActivity"/>
-        <activity android:name=".module.view.activity.StandardActivity"
+        <activity
+            android:name=".widget.BaseActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".module.view.activity.LaunchModeActivity"/>
+        <activity
+            android:name=".module.view.activity.StandardActivity"
             android:launchMode="standard"/>
-        <activity android:name=".module.view.activity.SingleInstanceActivity"
+        <activity
+            android:name=".module.view.activity.SingleInstanceActivity"
             android:launchMode="singleInstance"/>
-        <activity android:name=".module.view.activity.SingleTaskActivity"
-                  android:launchMode="singleTask"/>
-        <activity android:name=".module.view.activity.SingleTopActivity"
-                  android:launchMode="singleTop"/>
+        <activity
+            android:name=".module.view.activity.SingleTaskActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.view.activity.SingleTopActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".module.view.animation.AnimationActivity"
+            android:theme="@style/AppTheme.FullScreen"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.view.animation.FpsActivity"
+            android:theme="@style/AppTheme.FullScreen"
+            android:launchMode="singleTask"/>
     </application>
 
 </manifest>

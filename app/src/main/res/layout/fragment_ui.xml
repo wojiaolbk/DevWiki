@@ -13,5 +13,10 @@
             android:id="@+id/activity_btn"
             style="@style/style_normal_button"
             android:text="@string/activity"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/animation_btn"
+            style="@style/style_normal_button"
+            android:text="@string/animation"/>
     </LinearLayout>
 </ScrollView>
