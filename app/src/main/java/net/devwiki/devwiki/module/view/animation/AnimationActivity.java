@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.devwiki.module.view.animation.pic.FpsImageActivity;
 
 /**
  * 动画测试界面
@@ -18,6 +19,9 @@ import net.devwiki.devwiki.R;
 public class AnimationActivity extends AppCompatActivity {
 
     public static final String FPS_TYPE = "fpsType";
+
+    private AppCompatButton canvasBtn;
+    private AppCompatButton imageBtn;
 
     private AppCompatButton fps1Btn;
     private AppCompatButton fps2Btn;
@@ -33,6 +37,8 @@ public class AnimationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_animation);
         enableScreenKeepOn();
 
+        canvasBtn = (AppCompatButton) findViewById(R.id.canvas_btn);
+        imageBtn = (AppCompatButton) findViewById(R.id.image_btn);
         fps1Btn = (AppCompatButton) findViewById(R.id.fps_1_btn);
         fps2Btn = (AppCompatButton) findViewById(R.id.fps_2_btn);
         fps3Btn = (AppCompatButton) findViewById(R.id.fps_3_btn);
@@ -46,6 +52,8 @@ public class AnimationActivity extends AppCompatActivity {
         fps5Btn.setOnClickListener(mClickListener);
         fps10Btn.setOnClickListener(mClickListener);
         fps20Btn.setOnClickListener(mClickListener);
+        canvasBtn.setOnClickListener(mClickListener);
+        imageBtn.setOnClickListener(mClickListener);
     }
 
     public void enableScreenKeepOn() {
@@ -78,6 +86,12 @@ public class AnimationActivity extends AppCompatActivity {
                     break;
                 case R.id.fps_20_btn:
                     intent.putExtra(FPS_TYPE, 20);
+                    break;
+                case R.id.canvas_btn:
+                    intent = new Intent(AnimationActivity.this, FpsCustomActivity.class);
+                    break;
+                case R.id.image_btn:
+                    intent = new Intent(AnimationActivity.this, FpsImageActivity.class);
                     break;
             }
             startActivity(intent);

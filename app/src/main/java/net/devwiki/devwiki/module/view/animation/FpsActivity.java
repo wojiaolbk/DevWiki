@@ -19,8 +19,6 @@ import net.devwiki.log.DevLog;
 public class FpsActivity extends AppCompatActivity {
 
     private AppCompatImageView waveIv;
-    private AppCompatButton startBtn;
-    private AppCompatButton stopBtn;
     private AnimationDrawable mAnimationDrawable;
 
     @Override
@@ -29,48 +27,33 @@ public class FpsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fps);
         enableScreenKeepOn();
         waveIv = (AppCompatImageView) findViewById(R.id.wave_iv);
-        startBtn = (AppCompatButton) findViewById(R.id.start_btn);
-        stopBtn = (AppCompatButton) findViewById(R.id.stop_btn);
         int fps = getIntent().getIntExtra(AnimationActivity.FPS_TYPE, 1);
         DevLog.d("fsp:" + fps);
         switch (fps) {
             case 1:
-                waveIv.setImageResource(R.drawable.ic_record_wave_1);
+                waveIv.setImageResource(R.drawable.ic_chat_record_wave_1);
                 break;
             case 2:
-                waveIv.setImageResource(R.drawable.ic_record_wave_2);
+                waveIv.setImageResource(R.drawable.ic_chat_record_wave_2);
                 break;
             case 3:
-                waveIv.setImageResource(R.drawable.ic_record_wave_3);
+                waveIv.setImageResource(R.drawable.ic_chat_record_wave_3);
                 break;
             case 5:
-                waveIv.setImageResource(R.drawable.ic_record_wave_5);
+                waveIv.setImageResource(R.drawable.ic_chat_record_wave_5);
                 break;
             case 10:
-                waveIv.setImageResource(R.drawable.ic_record_wave_10);
+                waveIv.setImageResource(R.drawable.ic_chat_record_wave_10);
                 break;
             case 20:
-                waveIv.setImageResource(R.drawable.ic_record_wave_20);
+                waveIv.setImageResource(R.drawable.ic_chat_record_wave_20);
                 break;
         }
 
-        startBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mAnimationDrawable = (AnimationDrawable) waveIv.getDrawable();
-                if (mAnimationDrawable != null) {
-                    mAnimationDrawable.start();
-                }
-            }
-        });
-        stopBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mAnimationDrawable != null) {
-                    mAnimationDrawable.stop();
-                }
-            }
-        });
+        mAnimationDrawable = (AnimationDrawable) waveIv.getDrawable();
+        if (mAnimationDrawable != null) {
+            mAnimationDrawable.start();
+        }
         enableScreenKeepOn();
     }
 

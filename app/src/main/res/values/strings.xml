@@ -66,4 +66,6 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="animation">Animation</string>
+    <string name="water_wave">波纹</string>
+    <string name="microphone">麦克风</string>
 </resources>

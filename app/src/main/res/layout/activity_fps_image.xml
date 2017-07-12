@@ -8,8 +8,9 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <android.support.v7.widget.AppCompatImageView
+    <net.devwiki.devwiki.module.view.animation.pic.VoiceAnimImageView
         android:id="@+id/wave_iv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </LinearLayout>

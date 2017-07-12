@@ -44,6 +44,15 @@
             android:name=".module.view.animation.FpsActivity"
             android:theme="@style/AppTheme.FullScreen"
             android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.view.animation.pic.FpsImageActivity"
+            android:theme="@style/AppTheme.FullScreen"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".module.view.animation.FpsCustomActivity"
+            android:theme="@style/AppTheme.FullScreen"
+            android:launchMode="singleTask"/>
+
     </application>
 
 </manifest>
