@@ -68,4 +68,8 @@
     <string name="animation">Animation</string>
     <string name="water_wave">波纹</string>
     <string name="microphone">麦克风</string>
+    <string name="rx_java">RxJava</string>
+    <string name="sub_cancel">SubCancel</string>
+    <string name="obs_cancel">ObsCancel</string>
+    <string name="complete">Complete</string>
 </resources>

@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
+import net.devwiki.devwiki.module.thread.ThreadFragment;
 import net.devwiki.devwiki.module.view.UIFragment;
 
 import java.util.Arrays;
@@ -158,6 +159,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_ui:
                 mFragmentManager.beginTransaction().replace(R.id.content_fl, UIFragment.newInstance()).commit();
                 break;
+            case R.id.nav_service:
+                mFragmentManager.beginTransaction().replace(R.id.content_fl, ThreadFragment.newInstance()).commit();
+                break;
             case R.id.nav_data:
 //                mFragmentManager.beginTransaction().replace(R.id.content_fl, DataFragment.newInstance()).commit();
                 break;
@@ -168,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                mFragmentManager.beginTransaction().replace(R.id.content_fl, MediaFragment.newInstance()).commit();
                 break;
             case R.id.nav_device:
-//                mFragmentManager.beginTransaction().replace(R.id.content_fl, DeviceFragment.newInstance()).commit();
+//                mFragmentManager.beginTransaction().replace(R.id.content_fl, ThreadFragment.newInstance()).commit();
                 break;
             case R.id.nav_share:
 

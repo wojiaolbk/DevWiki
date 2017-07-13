@@ -25,6 +25,8 @@ dependencies {
     compile libraries.supportDesign
     compile libraries.butterknife
     compile libraries.devLog
+    compile libraries.rxJava
+    compile libraries.rxAndroid
     annotationProcessor libraries.butterknifeCompiler
 //    compile project(':ui')
 //    compile project(':net')

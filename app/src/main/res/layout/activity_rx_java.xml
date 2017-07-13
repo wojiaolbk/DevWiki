@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="net.devwiki.devwiki.module.thread.rxjava.RxJavaActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/result_tv"
+        style="@style/style_normal_button"
+        tools:text="123456"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/sub_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Sub"/>
+        <RadioButton
+            android:id="@+id/obs_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="obs"/>
+    </RadioGroup>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/start_btn"
+        style="@style/style_normal_button"
+        android:text="@string/start"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/stop_btn"
+        style="@style/style_normal_button"
+        android:text="@string/stop"/>
+</LinearLayout>
