@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import net.devwiki.devwiki.R;
+import net.devwiki.log.DevLog;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -23,6 +24,12 @@ public class LaunchModeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch_mode);
         ButterKnife.bind(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        DevLog.d("taskId:" + getTaskId());
     }
 
     @OnClick({R.id.standard_btn, R.id.task_btn, R.id.top_btn, R.id.instance_btn})

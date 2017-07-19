@@ -23,6 +23,7 @@ import android.widget.RelativeLayout;
 
 import net.devwiki.devwiki.module.thread.ThreadFragment;
 import net.devwiki.devwiki.module.view.UIFragment;
+import net.devwiki.log.DevLog;
 
 import java.util.Arrays;
 import java.util.List;
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        DevLog.d("taskId:" + getTaskId());
 
         mFragmentManager = getSupportFragmentManager();
         setSupportActionBar(mToolbar);
@@ -132,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            DevLog.d("按下了Back!");
         }
     }
 
