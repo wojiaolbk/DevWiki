@@ -13,5 +13,6 @@ public class ServiceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //there is nothing!!!   0.0
     }
 }
